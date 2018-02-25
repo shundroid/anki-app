@@ -1,19 +1,25 @@
 import readFile from '@/lib/fileReader'
+import marked from 'marked'
 
 const state = {
-  readingFile: null
+  file: null,
+  md: ''
 }
 
 const mutations = {
-  READ_FILE (state, file) {
-    state.readingFile = file
+  SET_FILE (state, file) {
+    state.file = file
+  },
+  SET_MD (state, md) {
+    state.md = md
   }
 }
 
 const actions = {
   readFile ({ commit }, file) {
-    readFile(file).then(file => {
-      commit('READ_FILE')
+    commit('SET_FILE', file)
+    readFile(file).then(text => {
+      commit('SET_MD', marked(text))
     })
   }
 }
