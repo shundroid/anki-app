@@ -1,18 +1,10 @@
 <template>
   <div id="app">
     <v-app dark>
-      <v-toolbar fixed app>
-        <v-toolbar-title ml-100>ZEMA</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn
-          icon
-        >
-          <v-icon>menu</v-icon>
-        </v-btn>
-      </v-toolbar>
+      <Header />
       <v-content>
         <v-container fluid fill-height>
-          <welcome-view></welcome-view>
+          <WelcomeView />
         </v-container>
       </v-content>
     </v-app>
@@ -21,9 +13,11 @@
 
 <script>
   import WelcomeView from '@/components/WelcomeView'
+  import Header from '@/components/Header'
   export default {
     components: {
-      WelcomeView
+      WelcomeView,
+      Header
     }
   }
 </script>
