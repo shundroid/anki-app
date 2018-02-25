@@ -1,28 +1,30 @@
-# anki-app
+# ema
 
-> For my brain
+> Efficiently Memorizing Assistant
 
-#### Build Setup
+## Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:9080
+# serve with hot reload at localhost:8080
 npm run dev
 
-# build electron application for production
+# build for production with minification
 npm run build
 
-# run unit & end-to-end tests
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
 npm test
-
-
-# lint all JS/Vue component files in `src/`
-npm run lint
-
 ```
 
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[1c165f7](https://github.com/SimulatedGREG/electron-vue/tree/1c165f7c5e56edaf48be0fbb70838a1af26bb015) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
