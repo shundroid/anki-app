@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import axios from 'axios'
 import Vuetify from 'vuetify'
+import router from './router'
 import 'vuetify/dist/vuetify.css'
 
 import App from './App'
@@ -14,5 +15,6 @@ Vue.config.productionTip = false
 new Vue({
   components: { App },
   store,
+  router,
   template: '<App/>'
 }).$mount('#app')

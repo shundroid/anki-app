@@ -1,9 +1,0 @@
-{
-  "name": "ema",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": ".",
-  "short_name": "ema",
-  "description": "Efficiently Memorizing Assistant",
-  "background_color": "#f5f5f5"
-}
