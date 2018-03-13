@@ -3,7 +3,7 @@
     <v-btn icon>
       <v-icon>menu</v-icon>
     </v-btn>
-    <v-toolbar-title ml-100>ZEMA</v-toolbar-title>
+    <v-toolbar-title ml-100>ema</v-toolbar-title>
     <v-spacer></v-spacer>
     <OpenFileButton />
   </v-toolbar>
