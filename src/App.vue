@@ -4,8 +4,8 @@
       <Header />
       <v-content>
         <v-container fluid fill-height>
-          <WelcomeView />
-          <Viewer />
+          <WelcomeView v-if="!file" />
+          <Viewer v-if="file" />
         </v-container>
       </v-content>
     </v-app>
@@ -13,14 +13,22 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 import WelcomeView from '@/components/WelcomeView'
 import Viewer from '@/components/Viewer'
 import Header from '@/components/Header'
+
 export default {
   components: {
     WelcomeView,
     Viewer,
     Header
+  },
+  computed: {
+    ...mapState({
+      file: state => state.File.file
+    })
   }
 }
 </script>
